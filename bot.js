@@ -62,8 +62,10 @@ if (message.content.startsWith(prefix + 'help')) { /// Code Send The Help In DMS
     let pages = [`**
         ***__General orders__***
 **
+Bot By @Abdelrhman Elsmeri#4476
 ${prefix}allbots/لعرض جميع البوتات الي بالسيرفر
 ${prefix}server/يعرض لك معلومات عن السيرفر
+${prefix}ping/يعرض لك بينج البوت و بينجك
 ${prefix}bot/يعرض لك كل معلومات البوت
 ${prefix}count/يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
 ${prefix}invites/ يعرض لك  عدد انفايتاتك بالسيرفر 
@@ -96,6 +98,7 @@ ${prefix}contact/ارسال اقتراح او لمراسلة صاحب البوت
 ,`
         ***__Administrative Orders__***
 **
+Bot By @Abdelrhman Elsmeri#4476
 ${prefix}move @user /  لسحب الشخص الى روومك
 ${prefix}bc / رسالة جماعية الى كل اعضاء السيرفر
 ${prefix}bk / رسالة جماعيه مع
@@ -128,6 +131,7 @@ ${prefix}deletecolors <number> / لحذف الالوان
    `,`
         ***__Music orders__***
 **
+Bot By @Abdelrhman Elsmeri#4476
 ${prefix}play / لتشغيل أغنية برآبط أو بأسم
 ${prefix}skip / لتجآوز الأغنية الحآلية
 ${prefix}pause / إيقآف الأغنية مؤقتا
@@ -138,7 +142,8 @@ ${prefix}np / لمعرفة الأغنية المشغلة حآليا
 ${prefix}queue / لمعرفة قآئمة التشغيل
 **
         ***__Games orders__***
- **       
+ **
+Bot By @Abdelrhman Elsmeri#4476
 ${prefix}rps / حجر ورقة مقص
 ${prefix}speed / اسرع كتابة
 ${prefix}quas / اسئلة عامة
@@ -296,7 +301,7 @@ client.on('message', function(msg) {
             .setAuthor(client.user.username,client.user.avatarURL)
             .setThumbnail(client.user.avatarURL)
             .setColor('RANDOM')
-            .setTitle('``INFO 3bker Community ©`` ')
+            .setTitle('``INFO Abdelrhman Community ©`` ')
             .addField('``My Ping``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
             .addField('``RAM Usage``', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true)
             .addField('``servers``', [client.guilds.size], true)
@@ -306,7 +311,7 @@ client.on('message', function(msg) {
             .addField('``My ID``' , `[ ${client.user.id} ]` , true)
 			      .addField('``My Prefix``' , `[ ! ]` , true)
 			      .addField('``My Language``' , `[ Java Script ]` , true)
-			      .setFooter('By | 3bker')
+			      .setFooter('By | Abdelrhman Elsmeri')
     })
 }
 });
@@ -1894,9 +1899,9 @@ client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=435392018693488641&scope=bot&permissions=2146958591')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=591031924412252162&permissions=8&scope=bot')
   .setDescription(`**
-  New Server Add 3bker Community © ?
+  New Server Add Abdelrhman Community © ?
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("474127377245667328").sendEmbed(embed)
@@ -1905,9 +1910,9 @@ client.on('guildDelete', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=435392018693488641&scope=bot&permissions=2146958591')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=591031924412252162&permissions=8&scope=bot')
   .setDescription(`**
-  Server Kicked 3bker Community © :cry:
+  Server Kicked Abdelrhman Community © :cry:
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("474127377245667328").sendEmbed(embed)
@@ -2104,7 +2109,7 @@ message.channel.sendEmbed(sh);
 });
 client.on('message', message => {
                                 if(!message.channel.guild) return;
-                        if (message.content.startsWith('G.ping')) {
+                        if (message.content.startsWith('prefix + "ping")) {
                             if(!message.channel.guild) return;
                             var msg = `${Date.now() - message.createdTimestamp}`
                             var api = `${Math.round(client.ping)}`
@@ -2285,7 +2290,7 @@ const cuttweet = [     'كت تويت ‏| تخيّل لو أنك سترسم ش�
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
    .setThumbnail(message.author.avatarURL) 
- .addField('3bker Community ©' ,
+ .addField('Abdelrhman Community ©' ,
   `${cuttweet[Math.floor(Math.random() * cuttweet.length)]}`)
   message.channel.sendEmbed(embed);
   console.log('[id] Send By: ' + message.author.username)
@@ -2456,7 +2461,6 @@ const zead = [
    '*** مريم : اعلم انك هنا في المنزل ***',
    '*** مريم : ماذا تريد ان تسمع ***',
    '*** احد ما خرج من المنزل ***',
-   '*** انتظر الجزء الثاني عندما يوصل البوت 100 سيرفر , ساعدني في نشر البوت وادخل هذا السيرفر  ***'
 ];
  client.on('message', message => {
  if (message.content.startsWith('G.مريم')) {
@@ -2540,7 +2544,7 @@ client.on('message', message => {
 var embed = new Discord.RichEmbed()
 .setColor('RANDOM')
  .setThumbnail(message.author.avatarURL) 
-.addField('3bker Community ©' ,
+.addField('Abdelrhman Community ©' ,
 `${Za7f[Math.floor(Math.random() * Za7f.length)]}`)
 message.channel.sendEmbed(embed);
 console.log('[38ab] Send By: ' + message.author.username)
@@ -2736,7 +2740,7 @@ client.on('message', async msg => { // eslint-disable-line
 			        .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 //by ,$ ReBeL ء , ??#4777 'CODES SERVER'
-					.setFooter("3bker Community ©")
+					.setFooter("Abdelrhman Community ©")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
 					// eslint-disable-next-line max-depth
@@ -2917,7 +2921,6 @@ ${prefix}np ? لمعرفة الأغنية المشغلة حآليا
 ${prefix}queue ? لمعرفة قآئمة التشغيل
  `)//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
    message.channel.sendEmbed(embed)//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
-    
    }
    });
  client.on('message', message => {
